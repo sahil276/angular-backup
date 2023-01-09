@@ -1,0 +1,60 @@
+/*
+Basic Commands
+    1.Create package.json - npm init
+    2.Create packge.json - 
+        intsall Express - npm i express
+
+Basic Steps
+    1.creating a folder - (bankserver)
+    2.create a package.json file - (npm init)
+    3.create a nodemodules file (npm express)
+    4.create Index.js file 
+    5.import express into index.js
+        const express = require("express");
+    6.create app using express
+        const app = express();
+    7.set up port number
+        app.listen(3000,()=>{
+            console.log('listenig on port 3000');
+        })
+    8.resolving http requests
+        app.get('/', (req, res) => {
+            res.send('Get http request');
+        })
+    9.Install nodemon - npm i -g nodemon
+    10.To get json file in javascript
+        app.use(express.json());
+
+    11.Http respose code
+        1xx - Information
+        2xx - successfull
+        3xx - redirection
+        4xx - client error
+        5xx - server error
+
+    12. JWT Token - Authentication
+        In simple term, Authentication is the process of verifying who a user is, while authorizationn is the 
+        process of verifying what they have access to.
+
+        To check login or not?
+            login -> token generate -> client -> req to deposit + token -> server token check?
+        Install JWT Token - json webtoken
+            npm i json webtoken
+        To generate a new JWT Token - sign()
+    
+    13. Middleware - To verify the token    
+        it comes in the middle of the request and response
+        it also provide access to many function
+
+        1. Application level Middleware
+            For entire application
+        2.Rounter level Middleware
+            To verify token
+            To validate token - verify()            
+
+
+
+
+
+
+*/        
